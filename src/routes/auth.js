@@ -15,7 +15,7 @@ router
   .get(
     "/google/callback",
     passport.authenticate("google", {
-      failureRedirect: "https://study-buddy.vercel.app/login",
+      failureRedirect: "https://study-buddy-eosin.vercel.app/login",
       session: false,
     }),
     authController.googleAuth
