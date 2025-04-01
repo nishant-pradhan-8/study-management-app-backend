@@ -15,7 +15,7 @@ router
   .get(
     "/google/callback",
     passport.authenticate("google", {
-      failureRedirect: "https://study-management-web-app.onrender.com/login",
+      failureRedirect: "https://studyBuddy.vercel.app/login",
       session: false,
     }),
     authController.googleAuth
