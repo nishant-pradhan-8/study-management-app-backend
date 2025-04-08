@@ -93,9 +93,7 @@ const shareNote = async (req, res) => {
       userUpdateResult.modifiedCount !==
       notes.filter((note) => note.receivedBy).length
     ) {
-      if (notFoundUsers.length > 0) {
-        console.error("Some users were not found during notification update.");
-      }
+     
 
       if (
         userUpdateResult.writeErrors &&
