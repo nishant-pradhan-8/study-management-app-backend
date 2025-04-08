@@ -53,7 +53,7 @@ const shareNote = async (req, res) => {
       if (note.receivedBy) {
         receivedList.push(note.receivedBy);
 
-        if (!receivedNotes.includes(note.receivedBy)) {
+        if (!receivedList.includes(note.receivedBy)) {
           const notificationObj = {
             notification: `${senderInfo.firstName} sent you study Notes ♥️`,
             notificationType: "notesShared",
