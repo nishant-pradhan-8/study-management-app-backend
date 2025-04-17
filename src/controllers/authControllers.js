@@ -371,7 +371,7 @@ const googleAuth = async (req, res) => {
   });
 
 
-  res.redirect("https://study-management-web-app.onrender.com/");
+  res.redirect("https://study-buddyy.vercel.app/");
 };
 
 module.exports = { registerUser, loginUser, refresh, logoutUser, googleAuth };
