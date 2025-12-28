@@ -371,7 +371,7 @@ const googleAuth = async (req, res) => {
   });
 
 
-  res.redirect("https://study-buddyy.vercel.app/");
+  res.redirect(process.env.CLIENT_URI);
 };
 
 module.exports = { registerUser, loginUser, refresh, logoutUser, googleAuth };
